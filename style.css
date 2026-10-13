@@ -1,0 +1,413 @@
+body {
+    background: linear-gradient(135deg, #FFFFFF, #FFFFFF);
+    font-family: "Georgia", "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    /*
+    background-image: url('back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f7f3eb; 
+    min-height: 100vh; 
+    box-sizing: border-box;
+  */
+}
+
+
+h1 {
+    text-align: center;
+    background: #F2EEFF;
+    color: #D97706;
+    padding: 20px;
+    border-bottom: 5px double #a194c9;
+    text-shadow: 2px 2px 3px #fff;
+    margin-top: 0;
+}
+
+header {
+    background:  #F2EEFF;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #a194c9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a2e00;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s, background 0.3s;
+    padding: 8px  5px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #72659d;
+    color: white;
+}
+
+.site-header {
+    display: flex;
+    box-shadow: #8b71e1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.site-header nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-logo {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+main {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    line-height: 1.6;
+    border-radius: 20px;
+    border-color: #c7780b;
+    box-shadow: #7a6e9e;
+}
+
+
+
+
+img {
+    border-radius: 15px;
+    margin: 10px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 15px rgba(180, 120, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background: #fffbea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 2px solid #d4af37;
+    padding: 10px;
+}
+
+thead {
+    background: #e8c547;
+    color: #4a2e00;
+}
+
+tbody tr:nth-child(even) {
+    background: #fff5cc;
+}
+
+tbody tr:hover {
+    background: #fde293;
+}
+
+textarea {
+    width: 60%;
+    margin-top: 10px;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    resize: none;
+    background: #fffdf5;
+    box-shadow: 0 0 5px #f0c13b;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #b8860b;
+    box-shadow: 0 0 8px #ffcc00;
+}
+
+button {
+    background-color: #d4af37;
+    color: #4a2e00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #b8860b;
+    color: white;
+}
+
+
+/* Main Footer */
+.site-footer {
+    --footer-purple: #5c2df5;
+    --footer-light: #f1edff;
+    --footer-gold: #f4d84a;
+
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(100px, 0.8fr) minmax(0, 3fr) minmax(100px, 0.8fr);
+    align-items: center;
+    gap: 15px;
+
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #4920d5, #5c2df5, #4716c9);
+    color: #fff;
+    text-align: center;
+
+    border-top: 4px solid var(--footer-gold);
+    box-shadow: inset 0 8px 20px rgba(35, 0, 100, 0.18);
+    overflow: hidden;
+}
+
+/* Center Content */
+.footer-content {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.footer-content p {
+    margin: 12px 0;
+    font-size: clamp(14px, 1.5vw, 19px);
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.footer-icon {
+    margin-right: 7px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: var(--footer-gold);
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+.footer-content a:hover {
+    color: var(--footer-gold);
+}
+
+.donate-message {
+    font-weight: bold;
+}
+
+/* Dancing Figures on Both Sides */
+.footer-dancers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    height: 100%;
+}
+
+.footer-dancers img {
+    display: block;
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 12px rgba(25, 0, 75, 0.2));
+}
+
+
+/* Mahamantra */
+.footer-mahamantra {
+    display: inline-block;
+    max-width: 100%;
+    margin: 12px auto 0;
+    padding: 12px 24px;
+
+    border: 2px solid var(--footer-gold);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 5px 15px rgba(30, 0, 80, 0.15);
+}
+
+.footer-mahamantra h5 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: transparent;
+    border-radius: 0;
+
+    font-size: clamp(15px, 1.7vw, 22px);
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 700px) {
+    .site-footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 22px 12px;
+    }
+
+    .footer-content {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .footer-dancers {
+        grid-row: 2;
+        align-self: end;
+    }
+
+    .footer-dancers img {
+        max-width: 150px;
+    }
+
+    .footer-dancers-left {
+        grid-column: 1;
+    }
+
+    .footer-mahamantra {
+        padding: 10px 14px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .footer-dancers img {
+        max-width: 115px;
+    }
+
+    .footer-content p {
+        font-size: 13px;
+    }
+
+    .footer-mahamantra h5 {
+        font-size: 14px;
+    }
+}
+
+
+/* 🌸 Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    img {
+        width: 90%;
+        height: auto;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    table {
+        width: 95%;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+
+/* The parent container holding the entire section */
+.video-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3effa; /* Soft, matching light lavender background */
+  overflow: hidden; /* Keeps the moving shapes inside the screen bounds */
+}
+
+/* Base style shared by both moving purple layers */
+.video-wrapper::before,
+.video-wrapper::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%; /* Makes them smooth circles */
+  mix-blend-mode: multiply; /* Helps transparent colors overlap elegantly */
+  filter: blur(10px); /* Optional: Softens edges slightly like the video */
+  z-index: 1; /* Places them behind the main content */
+}
+
+/* Layer 1: Large light-purple shape */
+.video-wrapper::before {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(186, 104, 200, 0.4); /* Translucent vibrant purple */
+  top: 10%;
+  left: 20%;
+  animation: floatShapeOne 25s infinite alternate ease-in-out;
+}
+
+/* Layer 2: Deeper purple shape moving on a different path */
+.video-wrapper::after {
+  width: 600px;
+  height: 600px;
+  background-color: rgba(142, 68, 173, 0.3); /* Translucent deep purple */
+  bottom: 10%;
+  right: 20%;
+  animation: floatShapeTwo 30s infinite alternate ease-in-out;
+}
+
+/* The actual central content (the temple graphic/video) */
+.main-content-circle {
+  position: relative;
+  z-index: 2; /* Sits firmly on top of the moving layers */
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.main-content-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- ANIMATIONS --- */
+/* Slow floating path for the first purple layer */
+@keyframes floatShapeOne {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(80px, 40px) scale(1.1) rotate(180deg);
+  }
+  100% {
+    transform: translate(-40px, 80px) scale(0.9) rotate(360deg);
+  }
+}
+
+/* Alternating floating path for the second purple layer */
+@keyframes floatShapeTwo {
+  0% {
+    transform: translate(0, 0) scale(0.9) rotate(360deg);
+  }
+  50% {
+    transform: translate(-60px, -80px) scale(1.1) rotate(180deg);
+  }
+  100% {
+    transform: translate(50px, 20px) scale(1) rotate(0deg);
+  }
+}
