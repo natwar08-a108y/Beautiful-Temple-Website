@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Schedule</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+        body {
+    background: linear-gradient(135deg, #FFFFFF, #FFFFFF);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+
+    background-image: url('Photo/Schedule.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f7f3eb; 
+    min-height: 100vh; 
+    box-sizing: border-box;
+
+}
+    table {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background: #fffbea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 2px solid #d4af37;
+    padding: 10px;
+}
+
+thead {
+    background: #e8c547;
+    color: #4a2e00;
+}
+
+tbody tr:nth-child(even) {
+    background: #fff5cc;
+}
+
+tbody tr:hover {
+    background: #fde293;
+}
+textarea {
+    width: 60%;
+    margin-top: 10px;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    resize: none;
+    background: #fffdf5;
+    box-shadow: 0 0 5px #f0c13b;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #b8860b;
+    box-shadow: 0 0 8px #ffcc00;
+}
+
+.jayati-mahotsava {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 18px;
+    color: #45351f;
+    background-color: #fff5d6;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.9;
+}
+
+.festival-title {
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    color: #936b16;
+    margin-bottom: 28px;
+}
+
+.jayati-mahotsava p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.festival-intro {
+    font-weight: 500;
+}
+
+.festival-conclusion {
+    padding: 20px;
+    border-left: 4px solid #d5a52b;
+    border-radius: 4px;
+}
+
+.festival-blessing {
+    text-align: center !important;
+    font-family: 'Lora', serif;
+    font-size: 18px !important;
+    font-style: italic;
+    font-weight: 600;
+    color: #936b16;
+    margin-top: 28px;
+}
+
+@media (max-width: 600px) {
+    .jayati-mahotsava {
+        padding: 28px 18px;
+    }
+
+    .jayati-mahotsava p {
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin: 35px auto 20px auto;">
+    <span style="display: inline-block; background: rgba(255, 253, 245, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 2px solid #c6ac54; border-radius: 30px; padding: 10px 25px; color: #4a2e00; font-family: 'Georgia', serif; font-size: 22px; font-weight: bold; box-shadow: 0 4px 15px rgba(180, 140, 40, 0.15);">
+        Today's Schedule 
+    </span>
+</div>
+    <section>
+    <table>
+        <thead>
+            <tr>
+                <th>Seva Performed</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Temple opens and Pata open</td><td>06:00 AM</td></tr>
+            <tr><td>Morning Mangla Aarti</td><td>08:00 AM - 09:00 AM</td></tr>
+            <tr><td>Bal Bhog</td><td>09:00 AM Onwards</td></tr>
+            <tr><td>Puja and Mid-day Bhog</td><td>11:00 AM - 01:00 PM</td></tr>
+            <tr><td>Thakur Pata closes</td><td>01:00 PM - 04:00 PM</td></tr>
+            <tr><td>Thakur Pata reopens</td><td>04:00 PM Onwards</td></tr>
+            <tr><td>Evening Aarti</td><td>07:00 PM - 08:00 PM</td></tr>
+            <tr><td>Evening Bhog</td><td>09:00 PM - 09:30 PM</td></tr>
+            <tr><td>Pata of Thakur closes</td><td>10:00 PM Onwards</td></tr>
+            <tr><td colspan="2"> Note: During winter hours may differ.</td></tr>
+        </tbody>
+    </table>
+</section>
+<div style="text-align: center; margin: 35px auto 20px auto;">
+    <span style="display: inline-block; background: rgba(255, 253, 245, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 2px solid #d4af37; border-radius: 30px; padding: 10px 25px; color: #4a2e00; font-family: 'Georgia', serif; font-size: 22px; font-weight: bold; box-shadow: 0 4px 15px rgba(180, 140, 40, 0.15);">
+        ✨ Peak Season To Visit ✨
+    </span>
+</div>
+<section class="jayati-mahotsava">
+    <h2 class="festival-title">Jayanti Mahotsava</h2>
+
+<div style="text-align: center; margin: 15px auto 10px auto;">
+    <span style="display: inline-block; background: rgba(57, 225, 82, 0.169); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 2px solid #37d43f69; border-radius: 30px; padding: 10px 25px; color: #013f24; font-family: 'Georgia', serif; font-size: 22px; font-weight: bold; box-shadow: 0 4px 15px rgba(180, 140, 40, 0.15);">
+         Start in January Every Year 
+    </span>
+</div>    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; margin: 20px 0;">
+    <img src="Photo/kuti2.webp" alt="Jayanti Mahotsava 1" style="width: 25%; max-width: 400px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 6px 15px rgba(180, 140, 40, 0.25); object-fit: cover;">
+    <img src="Photo/Satsang.png" alt="Jayanti Mahotsava 2" style="width: 100%; max-width: 400px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 6px 15px rgba(180, 140, 40, 0.25); object-fit: cover;">
+    <img src="Photo/kuti1.webp" alt="Jayanti Mahotsava 2" style="width: 25%; max-width: 400px; height: 200px; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 6px 15px rgba(180, 140, 40, 0.25); object-fit: cover;">
+
+</div>
+<p class="festival-intro">
+        Jayanti Mahotsava is a sacred celebration of devotion, spirituality,
+        and divine love, observed towards the end of January. This auspicious
+        festival brings together devotees from near and far, along with
+        revered saints and spiritual personalities from the holy land of
+        Vrindavan, creating an atmosphere filled with bhakti, peace, and joy.
+    </p>
+
+    <p class="festival-description">
+        One of the most beautiful highlights of the Mahotsava is the
+        continuous 24-hour Mahamantra Sankirtan, which continues for
+        fifteen days. The holy names of the Lord resonate throughout
+        the celebration, inspiring devotees to immerse themselves in
+        prayer, chanting, and remembrance of Shri Krishna.
+    </p>
+
+    <p class="festival-description">
+        Every year, devotees have the blessed opportunity to listen to
+        the divine wisdom of Shrimad Bhagwat Katha, delivered by
+        Shri Gaurang Das Ji Maharaj. Through his spiritual discourses,
+        devotees gain a deeper understanding of Krishna's divine pastimes,
+        the teachings of the scriptures, and the path of devotion.
+    </p>
+
+    <p class="festival-description">
+        Seva and compassion form an essential part of this grand celebration.
+        Hundreds of devotees are served Mahaprasad daily, reflecting the
+        spirit of selfless service, equality, and togetherness. The festival
+        becomes a beautiful gathering where everyone shares in the blessings
+        of the Lord and experiences the warmth of the Vaishnava community.
+    </p>
+
+    <p class="festival-conclusion">
+        The Mahotsava reaches its grand conclusion with a magnificent
+        Bhandara and the traditional Dola Yatra of Thakur Ji. During this
+        sacred procession, Thakur Ji is carried throughout the entire
+        village, allowing devotees to receive His darshan and participate
+        in the celebration. The village comes alive with kirtan, joy,
+        and devotion, bringing the festival to a memorable and spiritually
+        uplifting close.
+    </p>
+
+    <p class="festival-blessing">
+        Jayati Mahotsava is not merely a festival; it is an opportunity
+        to deepen one's devotion, serve fellow devotees, and experience
+        the timeless spiritual atmosphere of Vrindavan.
+    </p>
+</section>
+</body>
+</html>

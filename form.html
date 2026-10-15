@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM OF TEMPLE</title>
+
+<style>
+    
+    body {
+        font-family: "Georgia", "Times New Roman", serif;
+        background-image: url('Photo/form.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: #f7f3eb; 
+        min-height: 100vh; 
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+h1 {
+    text-align: center;
+    background: #F2EEFF;
+    color: #D97706;
+    padding: 20px;
+    border-bottom: 5px double #a194c9;
+    text-shadow: 2px 2px 3px #fff;
+    margin-top: 0;
+}
+header {
+    background: #fff;
+    text-align: center;
+    padding: 1px 0;
+    border-bottom: 2px solid #a194c9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34246a;
+    margin: 0 1px;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 8px 5px;
+    border-radius: 8px;
+    display: inline-block; 
+}
+
+nav a:hover {
+    background: #72659d;
+    color: white;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5px 0px;
+    background: #fff;
+}
+
+.site-header nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+
+.logo-container, 
+.logo-container a, 
+.site-logo {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    background: transparent !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+.site-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+
+.logo-container a:hover, 
+.site-logo:hover {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+    
+    main {
+        
+        background: rgba(255, 255, 255, 0.55);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        
+        border: 1px solid rgba(212, 175, 55, 0.5); 
+        width: 60%;
+        margin: 40px auto;
+        padding: 40px 35px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(120, 90, 20, 0.2);
+        color: #2c1e0f; 
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #4a2e00;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s, background 0.3s;
+        padding: 8px 14px;
+        border-radius: 8px;
+    }
+
+    nav a:hover {
+        background: #d4af37;
+        color: white;
+    }
+
+    
+    form div {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #3b2810;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #d4af37;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.75); 
+        font-size: 1em;
+        box-sizing: border-box;
+        color: #2c1e0f;
+        transition: box-shadow 0.3s, border-color 0.3s, background 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #b8860b;
+        box-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+
+
+.radio-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #3b2810;
+}
+
+
+.radio-label input[type="radio"] {
+    width: auto;
+    margin: 0 10px 0 0; 
+    accent-color: #d4af37; 
+    cursor: pointer;
+}
+
+    
+    a[href="/payment"] {
+        color: #7a3f00;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 6px 12px;
+        border-radius: 8px;
+        background: #f7d65a;
+        box-shadow: 0 2px 5px rgba(120, 80, 0, 0.3);
+        transition: background 0.3s;
+    }
+
+    a[href="/payment"]:hover {
+        background: #d4af37;
+        color: white;
+    }
+
+    
+    button {
+        background: #d4af37;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 10px rgba(150, 110, 20, 0.3);
+    }
+
+    button:hover {
+        background: #b8860b;
+        transform: scale(1.03);
+    }
+
+    
+    @media (max-width: 768px) {
+        main {
+            width: 90%;
+            padding: 20px;
+        }
+        body {
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="logo-container">
+    <a href="/">
+      <img src="Photo/logo.jpg" alt="Temple Logo" class="site-logo">
+    </a>
+  </div>
+  <nav>
+    <a href="index.html" target="_blank">Home</a>
+    <a href="explore.html" target="_blank">About us</a>  
+    <a href="https://iskconbooks.com" target="_blank" rel="noopener noreferrer">Purchase Books</a>
+    <a href="https://www.paytmpayments.com/payment-links" target="_blank">Donate 💟</a>       
+  </nav>
+</header>
+    <main>
+        <div class="temple-form-container">
+        <h2 style="text-align: center;">Visiting Temple Form</h2>
+        <form action="/submit.php">
+            <div>
+                <label for="name">Name*</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone*</label>
+                <input type="tel" placeholder="Enter your phone number" required>
+            </div>
+
+            <div>
+                <label for="email">E-mail Id</label>
+                <input type="email" placeholder="Enter your email Id">
+            </div>
+
+            <div>
+                <label for="gender">Gender*</label>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="address">Enter your address</label>
+                <input type="text" placeholder="Enter your address" required>
+            </div>
+
+            <div>
+                <label for="date">Date of visit*</label>
+                <input type="date" required>
+            </div>
+
+            <div>
+                <label for="time">Enter Time of visit</label>
+                <input type="time" required>
+            </div>
+
+            <div style="font-style: normal; color: #7a3f00;">
+                (Temple only open from 06:00 AM to 01:00 PM & again from 04:00 PM to 10:00 PM)
+            </div>
+
+<div>
+<p>Darshan Type</p>
+<div class="radio-group">
+    <label class="radio-label">
+        <input type="radio" name="darshan" value="basic"> Basic Darshan (Free)
+    </label>
+
+    <label class="radio-label">
+        <input type="radio" name="darshan" value="vip"> VIP Darshan
+    </label>
+</div>
+            </div>
+
+            <div>Click here to Pay: <a href="https://www.paytmpayments.com/payment-links" target="_blank">PAY NOW</a></div>
+
+            <div>
+                <label for="id">Enter the Transaction ID:</label>
+                <input type="text" placeholder="Enter Transaction ID" required>
+            </div>
+
+            <div>
+                <label for="comments">Comments</label>
+                <textarea id="comments" placeholder="Enter Your Thoughts" rows="4"></textarea>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit">Submit</button>
+            </div>
+
+            <div style="text-align: center; margin-top: 10px; font-style: italic;">Explore the Nikunj</div>
+        </form>
+        </div>
+    </main>
+</body>
+</html>

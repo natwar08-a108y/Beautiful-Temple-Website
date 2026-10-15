@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring - Shri Radha Govind Satsang Ashram</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            background: linear-gradient(135deg, #fffdf8, #f8f5ff, #fffaf0);
+            font-family: "Georgia", "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+
+        h1 {
+            text-align: center;
+            background: #F2EEFF;
+            color: #D97706;
+            padding: 20px;
+            border-bottom: 5px double #a194c9;
+            text-shadow: 2px 2px 3px #fff;
+            margin-top: 0;
+        }
+
+
+        header {
+            background: #fff;
+            text-align: center;
+            padding: 1px 0;
+            border-bottom: 2px solid #a194c9;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #34246a;
+            margin: 0 1px;
+            font-weight: bold;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 8px 5px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background: #72659d;
+            color: white;
+        }
+
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5px 0px;
+            background: #fff;
+        }
+
+        .site-header nav {
+            flex-grow: 1;
+            text-align: right;
+        }
+
+
+        .logo-container,
+        .logo-container a,
+        .site-logo {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            text-decoration: none !important;
+            background: transparent !important;
+            transform: none !important;
+            transition: none !important;
+        }
+
+        .site-logo {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        .logo-container a:hover,
+        .site-logo:hover {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            transform: none !important;
+        }
+
+
+        .explore-temple {
+            --gold: #b38a29;
+            --gold-dark: #846114;
+            --lavender: #a194c9;
+            --ink: #382f26;
+            --muted: #6f6254;
+            --paper: #fffdf7;
+
+            max-width: 1180px;
+            width: calc(100% - 48px);
+            margin: 0 auto;
+            padding: 45px 0 70px;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            color: var(--ink);
+        }
+
+        .explore-temple * {
+            box-sizing: border-box;
+        }
+
+
+        .temple-heading {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 35px;
+            padding: 48px 45px;
+            background:
+                radial-gradient(ellipse at top right,
+                    rgba(161, 148, 201, 0.15), transparent 48%),
+                linear-gradient(135deg, #fffdf7, #fff8e9);
+            border: 1px solid rgba(179, 138, 41, 0.4);
+            border-radius: 22px;
+            box-shadow: 0 12px 35px rgba(75, 54, 24, 0.07);
+        }
+
+        .temple-heading::before {
+            content: "A SACRED SPACE OF DEVOTION";
+            display: inline-block;
+            margin-bottom: 16px;
+            padding: 8px 16px;
+            border: 1px solid rgba(179, 138, 41, 0.45);
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.65);
+            color: var(--gold-dark);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        .temple-heading h2 {
+            color: #72531a;
+            font-family: "Lora", Georgia, serif;
+            font-size: clamp(30px, 4vw, 43px);
+            line-height: 1.25;
+            margin: 0 0 18px;
+            font-weight: 700;
+        }
+
+        .temple-heading p {
+            max-width: 820px;
+            margin: 0 auto;
+            color: #655749;
+            line-height: 1.95;
+            font-size: 15px;
+        }
+
+
+        .temple-description {
+            position: relative;
+            margin-bottom: 55px;
+            padding: 35px 38px 35px 42px;
+            background: rgba(255, 255, 255, 0.88);
+            border: 1px solid rgba(161, 148, 201, 0.35);
+            border-left: 5px solid var(--gold);
+            border-radius: 15px;
+            box-shadow: 0 8px 28px rgba(51, 37, 19, 0.055);
+        }
+
+        .temple-description h3 {
+            color: #72531a;
+            font-family: "Lora", Georgia, serif;
+            font-size: 27px;
+            line-height: 1.4;
+            margin: 0 0 20px;
+        }
+
+        .temple-description p {
+            color: #5b5147;
+            font-size: 14px;
+            line-height: 2;
+            margin: 0;
+        }
+
+        .temple-description strong,
+        .temple-description b {
+            color: #876519;
+            font-weight: 600;
+        }
+
+
+        .gallery-heading {
+            text-align: center;
+            margin: 0 0 28px;
+        }
+
+        .gallery-heading span {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--gold-dark);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .gallery-heading h2 {
+            margin: 0;
+            color: #493823;
+            font-family: "Lora", Georgia, serif;
+            font-size: clamp(27px, 3.5vw, 35px);
+        }
+
+        .gallery-heading p {
+            margin: 12px auto 0;
+            max-width: 650px;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+
+        .temple-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .temple-card {
+            min-width: 0;
+            padding: 24px;
+            text-align: center;
+            background: var(--paper);
+            border: 1px solid rgba(179, 138, 41, 0.24);
+            border-radius: 18px;
+            box-shadow: 0 7px 25px rgba(51, 37, 19, 0.055);
+            transition: transform 0.3s ease, box-shadow 0.3s ease,
+                        border-color 0.3s ease;
+        }
+
+        .temple-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(179, 138, 41, 0.58);
+            box-shadow: 0 15px 35px rgba(51, 37, 19, 0.10);
+        }
+
+        .temple-card h3 {
+            color: #72531a;
+            font-family: "Lora", Georgia, serif;
+            font-size: 22px;
+            line-height: 1.45;
+            margin: 0 0 18px;
+        }
+
+        .temple-card h3::after {
+            content: "";
+            display: block;
+            width: 44px;
+            height: 2px;
+            margin: 12px auto 0;
+            background: linear-gradient(90deg, var(--gold), var(--lavender));
+            border-radius: 5px;
+        }
+
+        .temple-card img {
+            display: block;
+            width: 100%;
+            max-width: 480px;
+            height: 250px;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            object-position: center;
+            border: 1px solid rgba(179, 138, 41, 0.35);
+            border-radius: 12px;
+            box-shadow: 0 5px 16px rgba(50, 36, 15, 0.09);
+        }
+
+        .temple-card p {
+            color: #6a5d50;
+            font-size: 13px;
+            line-height: 1.9;
+            margin: 0;
+        }
+
+
+        .temple-card:nth-child(2) {
+            grid-column: 1 / -1;
+            background:
+                radial-gradient(ellipse at top,
+                    rgba(242, 238, 255, 0.65), transparent 75%),
+                #fffdf7;
+        }
+
+        .darshan-scroll-container {
+            display: flex;
+            gap: 18px;
+            overflow-x: auto;
+            padding: 5px 3px 18px;
+            margin-bottom: 15px;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: thin;
+            scrollbar-color: #bda25c #f2ead8;
+        }
+
+        .darshan-scroll-container img {
+            flex: 0 0 280px;
+            width: 280px;
+            min-width: 0;
+            max-width: none;
+            height: 250px;
+            margin: 0;
+            object-fit: cover;
+            scroll-snap-align: start;
+        }
+
+        .darshan-scroll-container::-webkit-scrollbar {
+            height: 7px;
+        }
+
+        .darshan-scroll-container::-webkit-scrollbar-track {
+            background: #f2ead8;
+            border-radius: 10px;
+        }
+
+        .darshan-scroll-container::-webkit-scrollbar-thumb {
+            background: #bda25c;
+            border-radius: 10px;
+        }
+
+
+        @media (max-width: 768px) {
+            .explore-temple {
+                width: calc(100% - 30px);
+                padding: 30px 0 45px;
+            }
+
+            .temple-heading {
+                padding: 35px 22px;
+                margin-bottom: 25px;
+                border-radius: 17px;
+            }
+
+            .temple-heading p {
+                font-size: 14px;
+                line-height: 1.85;
+            }
+
+            .temple-description {
+                padding: 27px 23px;
+                margin-bottom: 40px;
+            }
+
+            .temple-description h3 {
+                font-size: 23px;
+            }
+
+            .temple-description p {
+                font-size: 13px;
+            }
+
+            .temple-gallery {
+                gap: 18px;
+            }
+
+            .temple-card {
+                padding: 17px;
+                border-radius: 15px;
+            }
+
+            .temple-card h3 {
+                font-size: 19px;
+            }
+
+            .temple-card img {
+                height: 210px;
+            }
+
+            .darshan-scroll-container img {
+                flex-basis: 240px;
+                width: 240px;
+                height: 210px;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .explore-temple {
+                width: calc(100% - 24px);
+                padding-top: 22px;
+            }
+
+            .temple-heading {
+                padding: 29px 18px;
+            }
+
+            .temple-heading::before {
+                font-size: 9px;
+                letter-spacing: 1.5px;
+            }
+
+            .temple-heading h2 {
+                font-size: 29px;
+            }
+
+            .temple-description {
+                padding: 23px 19px;
+                border-left-width: 4px;
+            }
+
+            .temple-description h3 {
+                font-size: 22px;
+            }
+
+            .temple-gallery {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .temple-card:nth-child(2) {
+                grid-column: auto;
+            }
+
+            .temple-card {
+                padding: 19px;
+            }
+
+            .temple-card h3 {
+                font-size: 21px;
+            }
+
+            .temple-card img {
+                height: 230px;
+            }
+
+            .darshan-scroll-container img {
+                flex-basis: 230px;
+                width: 230px;
+                height: 210px;
+            }
+
+            .gallery-heading p {
+                font-size: 12px;
+            }
+        }
+
+
+        @media (prefers-reduced-motion: reduce) {
+            .temple-card,
+            .darshan-scroll-container {
+                transition: none;
+                scroll-behavior: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="/">
+                <img src="Photo/logo.jpg" alt="Temple Logo" class="site-logo">
+            </a>
+        </div>
+
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="explore.html" target="_blank">About us</a>
+            <a href="https://iskconbooks.com" target="_blank" rel="noopener noreferrer">Purchase Books</a>
+            <a href="https://www.paytmpayments.com/payment-links" target="_blank">Donate 💟</a>
+        </nav>
+    </header>
+
+    <main class="explore-temple">
+
+        <section class="temple-heading">
+            <h2>Explore Our Temple</h2>
+            <p>
+                Welcome to Shri Radha Govind Satsang Ashram, a sacred abode
+                of devotion, spiritual learning, and divine grace. Discover
+                the beautiful surroundings, sacred spaces, devotional
+                traditions, and timeless heritage of our Ashram. Every corner
+                reflects the spirit of bhakti and offers devotees a peaceful
+                space to connect with the divine.
+            </p>
+        </section>
+
+        <section class="temple-description">
+            <h3>About the Temple Establishment</h3>
+
+            <p>
+                When the flow of the Mahaprabhu Bhakti Movement reached
+                Mithila, Gaudiya Vaishnavas envisioned establishing a sacred
+                dham where the eternal seva of Shri Radha Krishna could be
+                performed and festivals celebrated with devotion throughout
+                the year. This vision led to the establishment of
+                Shri Radha Krishna Dham at Lagma, Rambhadrapur.
+
+                With the dedicated efforts of nearby villagers and sadhu-sants
+                in 1978, the foundation of the temple was laid. This historic
+                milestone was celebrated with a grand
+                <b>Kalash Shobha Yatra</b>, a continuous
+                <b>30-day Bhagwat Mahayagya</b>, and
+                <b>24-hour continuous Naam Sankirtan</b>.
+
+                Several revered saints, including Shri Shyam Sunder Das and
+                Shri Radha Vallabh Baba of Ratanpur, graced the occasion.
+                Their presence marked an important chapter in the growth
+                of the Bhakti Movement in Mithila, laying the foundation
+                for a lasting tradition of worship, satsang, and seva.
+            </p>
+        </section>
+
+        <section class="temple-gallery-section">
+
+            <div class="gallery-heading">
+                <span>Darshan • Seva • Satsang</span>
+                <h2>A Glimpse of Our Sacred Dham</h2>
+                <p>
+                    Explore the spaces where devotion comes alive and
+                    experience the spiritual traditions of our Ashram.
+                </p>
+            </div>
+
+  <div class="temple-gallery" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 25px;">
+
+
+                <article class="temple-card">
+                    <h3>Temple Entrance</h3>
+
+                    <img
+                        src="Photo/Entrance.jpeg"
+                        alt="Entrance of Shri Radha Krishna Dham"
+                        loading="lazy"
+                    >
+
+                    <p>
+                        The entrance welcomes devotees into a serene
+                        spiritual atmosphere. It marks the beginning of
+                        a sacred journey filled with prayer, devotion,
+                        and remembrance of the Divine.
+                    </p>
+                </article>
+
+
+                <article class="temple-card">
+                    <h3>Divine Darshan of Shri Radha Krishna</h3>
+
+                    <div class="darshan-scroll-container">
+                        <img src="Photo/p1.jpeg" alt="Divine Darshan of Shri Radha Krishna" loading="lazy">
+                        <img src="Photo/p-4.jpeg" alt="Shri Radha Krishna Darshan view 2" loading="lazy">
+                        <img src="Photo/p-5.jpeg" alt="Shri Radha Krishna Darshan view 3" loading="lazy">
+                        <img src="Photo/p-6.jpeg" alt="Shri Radha Krishna Darshan view 4" loading="lazy">
+                        <img src="Photo/p-7.jpeg" alt="Shri Radha Krishna Darshan view 5" loading="lazy">
+                        <img src="Photo/p-2.jpeg" alt="Shri Radha Krishna Darshan view 6" loading="lazy">
+                    </div>
+
+                    <p>
+                        Behold the enchanting darshan of Shri Radha Krishna
+                        and experience the peace and grace associated with
+                        daily shringar and worship. Each darshan offers
+                        devotees a moment for prayer, reflection, and
+                        loving remembrance of the Divine Couple.
+                    </p>
+                </article>
+
+
+                <article class="temple-card">
+                    <h3>Spiritual Temple Courtyard</h3>
+
+                    <img
+                        src="Photo/images.jpg"
+                        alt="Temple courtyard and surroundings"
+                        loading="lazy"
+                    >
+
+                    <p>
+                        The courtyard provides a peaceful setting for
+                        devotees to gather, walk, reflect, and spend time
+                        in spiritual contemplation. It is a place to pause
+                        from everyday life and immerse oneself in the
+                        tranquil atmosphere of the Ashram.
+                    </p>
+                </article>
+
+
+                <article class="temple-card">
+                    <h3>Aarti and Nitya Seva</h3>
+
+                    <img
+                        src="Photo/p-3.jpeg"
+                        alt="Temple worship and aarti"
+                        loading="lazy"
+                    >
+
+                    <p>
+                        Daily worship and seva express the loving devotion
+                        of the Ashram. Through Mangala Aarti, Sandhya Aarti,
+                        bhog offerings, and heartfelt prayers, devotees
+                        participate in sacred traditions centered on
+                        the service of the Lord.
+                    </p>
+                </article>
+
+
+                <article class="temple-card">
+                    <h3>Sankirtan &amp; Discourse Hall</h3>
+
+                    <img
+                        src="Photo/Satsang.png"
+                        alt="Satsang and devotional gathering space"
+                        loading="lazy"
+                    >
+
+                    <p>
+                        Dedicated to Hari Naam Sankirtan, Srimad Bhagavatam
+                        discourses, and congregational devotional singing,
+                        this space brings devotees together in the shared
+                        experience of chanting, listening, and spiritual
+                        learning.
+                    </p>
+                </article>
+
+
+                <article class="temple-card">
+                    <h3>Anand Prasad Mandap</h3>
+
+                    <img
+                        src="Photo/prasad.webp"
+                        alt="Mahaprasad dining and serving area"
+                        loading="lazy"
+                    >
+
+                    <p>
+                        The Anand Prasad Mandap represents the spirit of
+                        hospitality and selfless service. Here, sanctified
+                        Mahaprasad is lovingly served to visiting sadhus,
+                        pilgrims, and devotees, reflecting the importance
+                        of sharing and community in devotional life.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
