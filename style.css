@@ -848,9 +848,19 @@ button:hover {
         width: 90%;
         height: auto;
     }
-    nav a {
-        display: block;
-        margin: 5px 0;
+    .site-header nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2px;
+    }
+    .site-header nav a {
+        display: inline-block;
+        margin: 0;
+        padding: 8px 5px;
+        font-size: 13px;
+        white-space: nowrap;
     }
     table {
         width: 95%;
