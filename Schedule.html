@@ -122,7 +122,69 @@ textarea:focus {
         text-align: left;
     }
 }
+.festival-badge-wrap {
+    text-align: center;
+    margin: 15px auto 10px auto;
+}
 
+.festival-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(15px, 4vw, 20px);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #6b4200;
+    background: linear-gradient(135deg, #fff4d2, #ffe2a6);
+    border: 1.5px solid #e0b24a;
+    border-radius: 999px;
+    box-shadow: 0 8px 22px rgba(201, 149, 26, 0.25);
+}
+
+.festival-badge::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #d9822b;
+    box-shadow: 0 0 0 4px rgba(217, 130, 43, 0.20);
+}
+
+.festival-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    gap: 14px;
+    margin: 24px 0;
+}
+
+.festival-gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 6px 15px rgba(180, 140, 40, 0.25);
+}
+
+@media (max-width: 600px) {
+    .festival-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .festival-gallery img {
+        height: 170px;
+    }
+
+    .festival-gallery img.gallery-wide {
+        grid-column: 1 / -1;
+        order: -1;
+        height: 200px;
+    }
+}
     </style>
 </head>
 <body>
@@ -161,15 +223,14 @@ textarea:focus {
 <section class="jayati-mahotsava">
     <h2 class="festival-title">Jayanti Mahotsava</h2>
 
-<div style="text-align: center; margin: 15px auto 10px auto;">
-    <span style="display: inline-block; background: rgba(57, 225, 82, 0.169); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 2px solid #37d43f69; border-radius: 30px; padding: 10px 25px; color: #013f24; font-family: 'Georgia', serif; font-size: 22px; font-weight: bold; box-shadow: 0 4px 15px rgba(180, 140, 40, 0.15);">
-         Start in January Every Year 
-    </span>
-</div>    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; margin: 20px 0;">
-    <img src="Photo/kuti2.webp" alt="Jayanti Mahotsava 1" style="width: 25%; max-width: 400px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 6px 15px rgba(180, 140, 40, 0.25); object-fit: cover;">
-    <img src="Photo/Satsang.png" alt="Jayanti Mahotsava 2" style="width: 100%; max-width: 400px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 6px 15px rgba(180, 140, 40, 0.25); object-fit: cover;">
-    <img src="Photo/kuti1.webp" alt="Jayanti Mahotsava 2" style="width: 25%; max-width: 400px; height: 200px; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 6px 15px rgba(180, 140, 40, 0.25); object-fit: cover;">
+<div class="festival-badge-wrap">
+    <span class="festival-badge">Starts in January Every Year</span>
+</div>
 
+<div class="festival-gallery">
+    <img src="Photo/kuti2.webp" alt="Jayanti Mahotsava kirtan">
+    <img src="Photo/Satsang.png" alt="Jayanti Mahotsava satsang" class="gallery-wide">
+    <img src="Photo/kuti1.webp" alt="Jayanti Mahotsava katha">
 </div>
 <p class="festival-intro">
         Jayanti Mahotsava is a sacred celebration of devotion, spirituality,
